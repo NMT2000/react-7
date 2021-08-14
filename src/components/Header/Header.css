@@ -1,0 +1,267 @@
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    padding: 0 2.5vw;
+}
+.toggle-btn {
+    width: 20px;
+    height: 10px;
+    position: relative;
+    cursor: pointer;
+}
+
+.toggle-btn span {
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #979797;
+}
+
+.toggle-btn span:nth-child(1) {
+    top: 0;
+}
+
+.toggle-btn span:nth-child(3) {
+    top: 100%;
+}
+
+.logo {
+    height: 30px;
+    margin: -10px 30px 0;
+}
+
+.search-box {
+    position: relative;
+    max-width: 500px;
+    width: 50%;
+    height: 35px;
+    display: flex;
+}
+
+.search-bar {
+    width: 85%;
+    height: 100%;
+    border: 2px solid #dbdbdb;
+    padding: 0 20px;
+    font-size: 16px;
+    text-transform: capitalize;
+}
+
+.search-btn {
+    width: 15%;
+    height: 100%;
+    background: #f0f0f0;
+    border: 2px solid #dbdbdb;
+    padding: 5px 0;
+    border-left: none;
+}
+
+.search-btn img {
+    height: 100%;
+}
+
+.user-options {
+    height: 35px;
+    display: flex;
+    margin-left: auto;
+    align-items: center;
+}
+
+.user-options .icon {
+    height: 80%;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.user-dp {
+    cursor: pointer;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.user-dp img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.user-dp2 {
+    cursor: pointer;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-left: 10px;
+    margin-top: 6px;
+}
+
+.user-dp2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.search__content {
+    width: 80%;
+    position: absolute;
+    background-color: #fff;
+    margin-top: 38px;
+    border-radius: 5px;
+    box-shadow: 0 1px 5px #a1a0a0;
+    padding-left: 10px;
+}
+.search__content > span {
+    display: block;
+    padding-bottom: 10px;
+    font-size: 12px;
+    font-weight: 700;
+}
+input:focus ~ .search__content {
+    display: block;
+}
+.search__content {
+    display: none;
+}
+.btn__des {
+    
+    color: white;
+    position: absolute;
+    background-color: darkslategray;
+    margin-right: 30px;
+    right: 50px;
+    top: 0;
+    border: 1px solid #ccc;
+}
+.btn__username {
+    display: flex;
+    border-bottom: 1px solid #afaeae;
+    padding-bottom: 15px;
+}
+.btn_desuser > p {
+    font-weight: bold;
+    margin-top: 1.5rem;
+}
+.btn_desuser > span {
+    display: block;
+    padding-bottom: 5px;
+    color: #1162fa;
+    font-size: 16px;
+}
+.user-dp3 {
+    cursor: pointer;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 15px;
+    margin-left: 10px;
+    margin-top: 1.5rem;
+}
+
+.user-dp3 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.btn__listaction {
+    list-style-type: none;
+    padding-left: 10px;
+    border-bottom: 1px solid #afaeae;
+    padding-bottom: 15px;
+}
+.btn__listaction > li {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+.btn__listaction > li > a {
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    font-weight: 600;
+}
+.bx {
+    font-size: 1.5em;
+    margin-right: 10px;
+    padding-left: 20px;
+}
+/*Tables w>=740 and w <*/
+@media only screen and (min-width: 740px) and (max-width:1023px) {
+.search-bar {
+    width: 65%;
+}
+.toggle-btn {
+    margin-bottom: 5px;
+}
+.logo {
+    height: 25px;
+}
+.btn__des {
+    margin-right: 10px;
+    
+}
+}
+@media only screen and (max-width: 740px) {
+.toggle-btn {
+    display: none;
+}
+.logo {
+    display: none;
+}
+.user-options .icon {
+    height: 90%;
+    margin-right: 15px;
+}
+.search-box {
+    width: 55%;
+}
+.btn__des {
+    margin-right: 0px;
+    width: 58%;
+}
+.user-dp3 {
+    width: 50px;
+}
+.btn_desuser > span {
+    font-size: 14px;
+}
+.btn__listaction {
+    padding-left: 10px;
+}
+.btn__listaction > li > a {
+    font-size: 11px;
+}
+
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+.btn__listaction > li > a {
+    font-size: 15px;
+}  
+.btn_desuser > span {
+    font-size: 14px;
+}
+.btn__des {
+    margin-right: 20px;
+    
+}
+}
+@media (min-width: 1025px) and (max-width: 1280px) {
+    .btn__listaction > li > a {
+        font-size: 15px;
+    }  
+    .btn_desuser > span {
+        font-size: 14px;
+    }
+    .btn__des {
+        margin-right: 20px;
+        
+    }
+}

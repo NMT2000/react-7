@@ -1,0 +1,68 @@
+.container_button {
+    display: flex;
+    margin-left: 100px;
+    margin-top: 60px;
+}
+.rcorners {
+    border-radius: 10px;
+    background-color: darkslategray;
+    padding: 5px;
+    width: 235px;
+    height: 110px;
+    margin-left: 2px;
+    border: solid 1px black;
+    margin-left: 10px;
+    padding-left: 15px;
+}
+.rcorners  a {
+        padding: 10px;
+        color:  white;
+        font-weight: 600;
+    }
+
+.rcorners:hover {
+    //opacity: 0.8;
+    background-color: black;
+}
+.rcorners__text {
+    color: white;
+    font-size: 40;
+}
+.button_img {
+    height: 50%;
+    width: 30%;
+    object-fit: cover;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+.container_button{
+    margin-left: 0;
+    margin-right: 10px;
+}
+}
+@media only screen and (max-width: 740px) {
+.container_button{
+    margin-left: 0;
+    margin-right: 10px;
+}
+.button_img {
+    width: 80%;
+}
+.rcorners a {
+    padding: 0;
+    font-size: 11px;
+    margin: 0 auto;
+    margin-left: 6px;
+}
+.rcorners {
+    padding-left: 0;
+    height: 95px;
+    width: 210px;
+}
+}
+@media (min-width: 1025px) and (max-width: 1280px) {
+    .container_button{
+        margin-left: 0;
+        margin-right: 10px;
+    }
+}

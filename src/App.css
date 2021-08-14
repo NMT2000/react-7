@@ -1,0 +1,115 @@
+#root {
+  height: 100%;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*:focus {
+  outline: none;
+}
+
+body {
+  position: relative;
+  background: #f0f0f0;
+  font-family: "roboto", sans-serif;
+}
+html,
+body {
+  min-height: 100vh;
+  
+}
+span {
+  font-size: 10px;
+}
+
+.dark-mode {
+  background-color: #1a1919;
+  color: #999;
+  height: 100%;
+  transition: background-color 0.25s ease-in-out;
+}
+
+.light-mode {
+  background-color: #fff;
+  color: #333;
+  height: 100%;
+  transition: background-color 0.25s ease-in-out;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 80px;
+  margin-top: 10px;
+  padding-right: 0;
+  max-width: 10%;
+}
+.switch {
+  position: fixed;
+  display: inline-block;
+  width: 30px;
+  height: 20px;
+  margin-top: 10px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+
+.switch-checkbox {
+  margin-right: 50px;
+}
+
+.gach {
+  margin-left: 115px;
+
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .gach {
+    margin-left: 10px;
+    width: 98%;
+  }
+}
+@media only screen and (min-width: 740px) and (max-width:1023px) {
+  .gach {
+    margin-left: 10px;
+    width: 97%;
+  }
+}
+@media only screen and (max-width: 740px) {
+.gach {
+  margin-left: 10px;
+  width: 90%;
+}
+.switch-checkbox {
+  margin-right: 80px;
+}
+.search-box {
+  width: 55%;
+}
+}
+@media (min-width: 1025px) and (max-width: 1280px) {
+.gach {
+  margin-left: 10px;
+  width: 98%;
+}
+}
